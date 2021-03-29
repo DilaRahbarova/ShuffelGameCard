@@ -30,6 +30,8 @@ public class PlayTheGame {
 
         }
         playerNum= input.nextInt();
+        ArrayList<String> deckShuffle = (ArrayList<String>) deck;
+        Collections.shuffle(deckShuffle);
         if (playerNum > 1 && playerNum < 9) {
             System.out.println("Lets start");
         int numOfCardsforAPlayer = deck.size() / playerNum;
